@@ -4,7 +4,9 @@
   "description": "A basic boilerplate of a Solidity project",
   "main": "index.js",
   "scripts": {
-    "test": "truffle test"
+    "t": "truffle",
+    "test": "truffle test",
+    "testnet": "ganache-cli"
   },
   "repository": {
     "type": "git",
