@@ -1,0 +1,32 @@
+{
+  "name": "solidity-boilerplate",
+  "version": "1.0.0",
+  "description": "A basic boilerplate of a Solidity project",
+  "main": "index.js",
+  "scripts": {
+    "t": "truffle",
+    "test": "truffle test",
+    "testnet": "ganache-cli"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kubide/solidity-Boilerplate.git"
+  },
+  "keywords": [
+    "solidity",
+    "truffle",
+    "open-zeppeling"
+  ],
+  "author": "Kubide",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kubide/solidity-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/Kubide/solidity-Boilerplate#readme",
+  "dependencies": {
+    "truffle": "^4.0.4"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.0.3"
+  }
+}
