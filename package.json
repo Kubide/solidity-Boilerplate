@@ -4,8 +4,12 @@
   "description": "A basic boilerplate of a Solidity project",
   "main": "index.js",
   "scripts": {
+    "check:unused": "npm-check ",
+    "check:update": "npm-check -u",
     "t": "truffle",
-    "test": "truffle test",
+    "test": "npm run test:linter && npm run test:truffle",
+    "test:linter": "solhint 'contracts/**/*.sol'",
+    "test:truffle": "truffle test",
     "testnet": "ganache-cli"
   },
   "repository": {
@@ -24,9 +28,17 @@
   },
   "homepage": "https://github.com/Kubide/solidity-Boilerplate#readme",
   "dependencies": {
-    "truffle": "^4.0.4"
+    "truffle": "^4.0.5",
+    "zeppelin-solidity": "^1.6.0"
   },
   "devDependencies": {
-    "ganache-cli": "^6.0.3"
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.6.1",
+    "ganache-cli": "^6.0.3",
+    "npm-check": "^5.5.2",
+    "solhint": "^1.1.10"
   }
 }
